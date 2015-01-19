@@ -347,7 +347,7 @@ int id action_menu_presenter 0x7f05001b
 int id action_mode_bar 0x7f05002e
 int id action_mode_bar_stub 0x7f05002d
 int id action_mode_close_button 0x7f050020
-int id action_settings 0x7f05003f
+int id action_settings 0x7f050040
 int id activity_chooser_view_content 0x7f050021
 int id always 0x7f05000d
 int id beginning 0x7f050012
@@ -396,6 +396,7 @@ int id tabMode 0x7f050003
 int id title 0x7f050027
 int id up 0x7f050016
 int id useLogo 0x7f050005
+int id webview 0x7f05003f
 int id withText 0x7f05000e
 int id wrap_content 0x7f050000
 int integer abc_max_action_buttons 0x7f090000
