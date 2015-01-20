@@ -7,14 +7,13 @@ import android.view.MenuItem;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 
-
 public class MainActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+
 	}
 
 	@Override
@@ -35,14 +34,15 @@ public class MainActivity extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
 	@JavascriptInterface
 	public void onStart() {
-        super.onStart();
-        
-        WebView webView =  (WebView)findViewById(R.id.webview);
-        //enable JavaScript
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("file:///android_asset/index.html");
-        webView.addJavascriptInterface(new WebAppInterface(this), "Android");
-    }
+		super.onStart();
+
+		WebView webView = (WebView) findViewById(R.id.webview);
+		// enable JavaScript
+		webView.getSettings().setJavaScriptEnabled(true);
+		webView.loadUrl("file:///android_asset/index.html");
+		webView.addJavascriptInterface(new WebAppInterface(this), "Android");
+	}
 }
