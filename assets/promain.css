@@ -77,3 +77,27 @@ span p{
     font-size: 8px;
     vertical-align: text-top;
 }
+#locMain{
+    margin:0;
+    height: 100%;
+}
+.locHeader{
+    margin-top: 100px;
+    position: absolute;
+    z-index: 20;
+}
+.locBtn{
+    margin:10px;
+    height:40px;
+    width: 40px;
+    padding: 2px;
+    border:1px solid gray;
+    border-radius:50px;
+    box-shadow: 1px 1px 1px black;
+    outline:none;
+}
+#map-canvas{
+    
+    width: 100%;
+    height: 100%;
+}
