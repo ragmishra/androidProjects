@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<link rel="stylesheet" type="text/css" href="promain.css">
+<title>Prometheus</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="caption"><p>Prometheus</p></div>
+            <div class="caption1"><p>Feel Safe with Us!!</p></div>
+        <div id="imgContainer">
+            <img src="images/google_plus300x300.png" class="imgbtn" onclick="showAndroidToast('This is google plus')"/>
+            
+            <img src="images/login_facebook300x300.png" class="imgbtn"/>
+            <img src="images/login_twitter300x300.png" class="imgbtn"/>
+            </div>
+        </div>
+        <div id="loginBox" class="box">
+            <div>
+        <input id ="nametxt" class="txtbox" type="email" placeholder="Email"/></div>
+            <div>
+        <input id="passtxt" class="txtbox" type="password" placeholder="Password"/></div> 
+           <!-- <div style="text-align:left;">
+            <input type="checkbox"><span style="font-size:11px;height:13px;text-align:right">Remember me</span></input></div>-->
+        <button id="signbtn" class="btn" type="button" onClick="showAndroidToast('hello hybrid!')" >Sign In</button>
+    <!--  <center><p> Create a new Account</p></center>
+        <button type="button" class="btn">REGISTER</button>-->
+        </div>
+    
+    <script type="text/javascript">
+    function showAndroidToast(toast) {
+        Android.showToast(toast);
+    }
+</script>
+    </div>
+</body>
+
+</html>
