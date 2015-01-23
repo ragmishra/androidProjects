@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -42,5 +43,21 @@ public class MainActivity extends ActionBarActivity {
 		webView.getSettings().setJavaScriptEnabled(true);
 		webView.loadUrl("file:///android_asset/index.html");
 		webView.addJavascriptInterface(new WebAppInterface(this), "Android");
+		
+		WebViewClientImpl webViewClient = new WebViewClientImpl(this);
+        webView.setWebViewClient(webViewClient);
+	}
+	
+	public class WebViewClientImpl extends WebViewClient {
+
+	    public WebViewClientImpl(MainActivity mainActivity) {
+			// TODO Auto-generated constructor stub
+		}
+
+		@Override
+	    public boolean shouldOverrideUrlLoading(WebView webView, String url) {
+	        return false;
+	    }
+
 	}
 }
